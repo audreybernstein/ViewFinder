@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		18ECDD1B22EF69E800A90DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDD1A22EF69E800A90DD7 /* AppDelegate.swift */; };
-		18ECDD1D22EF69E800A90DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDD1C22EF69E800A90DD7 /* ViewController.swift */; };
 		18ECDD2022EF69E800A90DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECDD1E22EF69E800A90DD7 /* Main.storyboard */; };
 		18ECDD2322EF69E800A90DD7 /* ViewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDD2122EF69E800A90DD7 /* ViewFinder.xcdatamodeld */; };
 		18ECDD2522EF69EA00A90DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ECDD2422EF69EA00A90DD7 /* Assets.xcassets */; };
 		18ECDD2822EF69EA00A90DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECDD2622EF69EA00A90DD7 /* LaunchScreen.storyboard */; };
+		18ECDD3022EF728D00A90DD7 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDD2F22EF728D00A90DD7 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18ECDD1722EF69E800A90DD7 /* ViewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ECDD1A22EF69E800A90DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18ECDD1C22EF69E800A90DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18ECDD1F22EF69E800A90DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18ECDD2222EF69E800A90DD7 /* ViewFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViewFinder.xcdatamodel; sourceTree = "<group>"; };
 		18ECDD2422EF69EA00A90DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18ECDD2722EF69EA00A90DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18ECDD2922EF69EA00A90DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ECDD2F22EF728D00A90DD7 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				18ECDD1A22EF69E800A90DD7 /* AppDelegate.swift */,
-				18ECDD1C22EF69E800A90DD7 /* ViewController.swift */,
 				18ECDD1E22EF69E800A90DD7 /* Main.storyboard */,
+				18ECDD2F22EF728D00A90DD7 /* AddPhotoViewController.swift */,
 				18ECDD2422EF69EA00A90DD7 /* Assets.xcassets */,
 				18ECDD2622EF69EA00A90DD7 /* LaunchScreen.storyboard */,
 				18ECDD2922EF69EA00A90DD7 /* Info.plist */,
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ECDD2322EF69E800A90DD7 /* ViewFinder.xcdatamodeld in Sources */,
-				18ECDD1D22EF69E800A90DD7 /* ViewController.swift in Sources */,
+				18ECDD3022EF728D00A90DD7 /* AddPhotoViewController.swift in Sources */,
 				18ECDD1B22EF69E800A90DD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
