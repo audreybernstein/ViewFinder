@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="1XA-yq-BzL">
             <objects>
-                <tableViewController id="yMU-EY-CKb" sceneMemberID="viewController">
+                <tableViewController id="yMU-EY-CKb" customClass="PostTableTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="I2O-VW-ACK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,9 +86,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9q-lm-jMk">
-                                <rect key="frame" x="20" y="504" width="42" height="11"/>
+                                <rect key="frame" x="20" y="504" width="42" height="6"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="dJH-N8-0u4" eventType="touchUpInside" id="xX1-2O-D9d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +99,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add new photo" id="Lfq-cN-1hv"/>
                     <connections>
+                        <outlet property="captionText" destination="HNU-jI-cEY" id="DHt-e1-6fu"/>
                         <outlet property="newImage" destination="ea0-mS-2sh" id="iw9-w9-ySB"/>
+                        <outlet property="newImageView" destination="ea0-mS-2sh" id="Cno-FY-0dD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1D-xQ-Udt" userLabel="First Responder" sceneMemberID="firstResponder"/>
