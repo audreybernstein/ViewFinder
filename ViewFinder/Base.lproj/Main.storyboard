@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="C9q-1s-6jq" kind="show" identifier="moveToDetail" id="LAU-Ph-aMf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -34,6 +37,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ViewFinder" id="CQu-cY-dNi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jsX-LQ-0dB"/>
                         <barButtonItem key="rightBarButtonItem" title="Add New Photo" id="QOj-bM-Zb0">
                             <connections>
                                 <segue destination="dJH-N8-0u4" kind="show" id="Q5y-VS-wcb"/>
@@ -107,6 +111,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1D-xQ-Udt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869.5652173913045" y="112.5"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="CEV-Tb-BPT">
+            <objects>
+                <viewController title="Photo" id="C9q-1s-6jq" customClass="PhotoDetailViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYd-0G-aVH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Try-nw-cXn">
+                                <rect key="frame" x="22" y="120" width="374" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="haR-Xw-iwx"/>
+                    </view>
+                    <connections>
+                        <outlet property="PhotoDetailDisplay" destination="Try-nw-cXn" id="qp7-wI-ZgZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKr-P6-w33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.6231884057972" y="810.9375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IB3-Ho-Sp0">

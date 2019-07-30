@@ -17,9 +17,20 @@ class PostTableTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                if let photoToSend = sender as? Photos {
+                    photoDetailView.photo = photoToSend
+                }
+            }
+        }
+    }
     
-    
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveToDetail", sender: photos[indexPath.row])
+    }
+
     
     
     
